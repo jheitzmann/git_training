@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_yh7kYKJ-EeaaP-8jc8-BNw" defaultContext="Default" jobType="Standard">
+  <context xmi:id="_yh7kYaJ-EeaaP-8jc8-BNw" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_yh7kYqJ-EeaaP-8jc8-BNw" comment="" name="Accesskey" prompt="Accesskey?" promptNeeded="false" repositoryContextId="_ZGC3kJzmEea32ck2zB4wRA" type="id_String" value=""/>
+    <contextParameter xmi:id="_yh7kY6J-EeaaP-8jc8-BNw" comment="" name="Secretkey" prompt="Secretkey?" promptNeeded="false" repositoryContextId="_ZGC3kJzmEea32ck2zB4wRA" type="id_Password" value=""/>
+    <contextParameter xmi:id="_yh7kZKJ-EeaaP-8jc8-BNw" comment="" name="s3_filepath" prompt="s3_filepath?" promptNeeded="false" type="id_Directory" value="E:/tmp/"/>
+    <contextParameter xmi:id="_yh7kZaJ-EeaaP-8jc8-BNw" comment="" name="s3_filename" prompt="s3_filename?" promptNeeded="false" type="id_String" value="mydata.txt"/>
+    <contextParameter xmi:id="_yh7kZqJ-EeaaP-8jc8-BNw" comment="" name="s3_bucket_name" prompt="s3_bucket_name?" promptNeeded="false" type="id_String" value="talend-s3-demo"/>
+  </context>
+  <parameters xmi:id="_yh7kZ6J-EeaaP-8jc8-BNw">
+    <elementParameter xmi:id="_yh7kaKJ-EeaaP-8jc8-BNw" field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter xmi:id="_yh7kaaJ-EeaaP-8jc8-BNw" field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter xmi:id="_yh7kaqJ-EeaaP-8jc8-BNw" field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter xmi:id="_yh7ka6J-EeaaP-8jc8-BNw" field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter xmi:id="_yh7kbKJ-EeaaP-8jc8-BNw" field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter xmi:id="_yh7kbaJ-EeaaP-8jc8-BNw" field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter xmi:id="_yh7kbqJ-EeaaP-8jc8-BNw" field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_yh7kb6J-EeaaP-8jc8-BNw" field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_yh7kcKJ-EeaaP-8jc8-BNw" field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter xmi:id="_yh7kcaJ-EeaaP-8jc8-BNw" field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter xmi:id="_yh7kcqJ-EeaaP-8jc8-BNw" field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter xmi:id="_yh7kc6J-EeaaP-8jc8-BNw" field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_yh7kdKJ-EeaaP-8jc8-BNw" field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter xmi:id="_yh7kdaJ-EeaaP-8jc8-BNw" field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_yh7kdqJ-EeaaP-8jc8-BNw" field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter xmi:id="_yh7kd6J-EeaaP-8jc8-BNw" field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter xmi:id="_yh7keKJ-EeaaP-8jc8-BNw" field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <routinesParameter xmi:id="_yh7keaJ-EeaaP-8jc8-BNw" id="_4ZTpQZEsEea0JasiLJb3RA" name="DataOperation"/>
+    <routinesParameter xmi:id="_yh7keqJ-EeaaP-8jc8-BNw" id="_4aEeQJEsEea0JasiLJb3RA" name="Mathematical"/>
+    <routinesParameter xmi:id="_yh7ke6J-EeaaP-8jc8-BNw" id="_4aKk4JEsEea0JasiLJb3RA" name="Numeric"/>
+    <routinesParameter xmi:id="_yh7kfKJ-EeaaP-8jc8-BNw" id="_4aQrgJEsEea0JasiLJb3RA" name="Relational"/>
+    <routinesParameter xmi:id="_yh7kfaJ-EeaaP-8jc8-BNw" id="_4ai_YJEsEea0JasiLJb3RA" name="SQLike"/>
+    <routinesParameter xmi:id="_yh7kfqJ-EeaaP-8jc8-BNw" id="_4aQrhJEsEea0JasiLJb3RA" name="StringHandling"/>
+    <routinesParameter xmi:id="_yh7kf6J-EeaaP-8jc8-BNw" id="_4aWyIJEsEea0JasiLJb3RA" name="TalendDataGenerator"/>
+    <routinesParameter xmi:id="_yh7kgKJ-EeaaP-8jc8-BNw" id="_4ac4wJEsEea0JasiLJb3RA" name="TalendDate"/>
+    <routinesParameter xmi:id="_yh7kgaJ-EeaaP-8jc8-BNw" id="_4ac4xJEsEea0JasiLJb3RA" name="TalendString"/>
+    <routinesParameter xmi:id="_yh7kgqJ-EeaaP-8jc8-BNw" id="_4RaN0Jm5Eeaod80FjU7nFQ" name="DQTechnical"/>
+    <routinesParameter xmi:id="_yh7kg6J-EeaaP-8jc8-BNw" id="_4MQoEJm5Eeaod80FjU7nFQ" name="DataMasking"/>
+    <routinesParameter xmi:id="_yh7khKJ-EeaaP-8jc8-BNw" id="_4RPOsJm5Eeaod80FjU7nFQ" name="DataQualityDependencies"/>
+    <routinesParameter xmi:id="_yh7khaJ-EeaaP-8jc8-BNw" id="_4RMLYJm5Eeaod80FjU7nFQ" name="DataQuality"/>
+    <routinesParameter xmi:id="_yh7khqJ-EeaaP-8jc8-BNw" id="_4RV8YJm5Eeaod80FjU7nFQ" name="DqStringHandling"/>
+    <routinesParameter xmi:id="_yh7kh6J-EeaaP-8jc8-BNw" id="_4Rd4MJm5Eeaod80FjU7nFQ" name="MDM"/>
+  </parameters>
+  <node xmi:id="_yh7kiKJ-EeaaP-8jc8-BNw" componentName="cAWSS3" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="256">
+    <elementParameter xmi:id="_yh7kiaJ-EeaaP-8jc8-BNw" field="TEXT" name="UNIQUE_NAME" value="cAWSS3_1" show="false"/>
+    <elementParameter xmi:id="_yh7kiqJ-EeaaP-8jc8-BNw" field="ROUTE_COMPONENT_TYPE" name="AWS_CONNECTION_CLIENT" value="cAWSConnection_1"/>
+    <elementParameter xmi:id="_yh7ki6J-EeaaP-8jc8-BNw" field="TEXT" name="BUCKET_NAME" value="context.s3_bucket_name"/>
+    <elementParameter xmi:id="_yh7kjKJ-EeaaP-8jc8-BNw" field="TEXT" name="FILE_NAME" value="context.s3_filename"/>
+    <elementParameter xmi:id="_yh7kjaJ-EeaaP-8jc8-BNw" field="TEXT" name="MAX_MESSAGES_PER_POLL" value="&quot;10&quot;"/>
+    <elementParameter xmi:id="_yh7kjqJ-EeaaP-8jc8-BNw" field="OPENED_LIST" name="STORAGE_CLASS" value="STANDARD" show="false"/>
+    <elementParameter xmi:id="_yh7kj6J-EeaaP-8jc8-BNw" field="TEXT" name="PREFIX" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_yh7kkKJ-EeaaP-8jc8-BNw" field="CHECK" name="DELETE_AFTER_READ" value="false"/>
+    <elementParameter xmi:id="_yh7kkaJ-EeaaP-8jc8-BNw" field="CHECK" name="DELETE_AFTER_WRITE" value="false" show="false"/>
+    <elementParameter xmi:id="_yh7kkqJ-EeaaP-8jc8-BNw" field="CHECK" name="MULTI_PART_UPLOAD" value="false" show="false"/>
+    <elementParameter xmi:id="_yh7kk6J-EeaaP-8jc8-BNw" field="TEXT" name="PART_SIZE" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_yh7klKJ-EeaaP-8jc8-BNw" field="CHECK" name="SERVER_SIDE_ENCRYPTION" value="false" show="false"/>
+    <elementParameter xmi:id="_yh7klaJ-EeaaP-8jc8-BNw" field="CHECK" name="INCLUDE_BODY" value="true"/>
+    <elementParameter xmi:id="_yh7klqJ-EeaaP-8jc8-BNw" field="TABLE" name="MESSAGE_HEADERS" show="false"/>
+    <elementParameter xmi:id="_yh7kl6J-EeaaP-8jc8-BNw" field="CHECK" name="USE_MESSAGE_HEADERS_USER_DEFINED" value="false" show="false"/>
+    <elementParameter xmi:id="_yh7kmKJ-EeaaP-8jc8-BNw" field="TABLE" name="MESSAGE_HEADERS_USER_DEFINED" show="false"/>
+    <elementParameter xmi:id="_yh7kmaJ-EeaaP-8jc8-BNw" field="CHECK" name="ENABLE_POLICY" value="false"/>
+    <elementParameter xmi:id="_yh7kmqJ-EeaaP-8jc8-BNw" field="MEMO" name="POLICY" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_yh7km6J-EeaaP-8jc8-BNw" field="TABLE" name="URI_OPTIONS"/>
+    <elementParameter xmi:id="_yh7knKJ-EeaaP-8jc8-BNw" field="TEXT" name="LABEL" value="Consumer"/>
+    <elementParameter xmi:id="_yh7knaJ-EeaaP-8jc8-BNw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_yh7knqJ-EeaaP-8jc8-BNw" componentName="cProcessor" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="256">
+    <elementParameter xmi:id="_yh7kn6J-EeaaP-8jc8-BNw" field="TEXT" name="UNIQUE_NAME" value="cProcessor_1" show="false"/>
+    <elementParameter xmi:id="_yh7koKJ-EeaaP-8jc8-BNw" field="MEMO_IMPORT" name="IMPORT" value="import java.io.BufferedReader;&#xA;import java.io.InputStream;&#xA;import java.io.InputStreamReader;"/>
+    <elementParameter xmi:id="_yh7koaJ-EeaaP-8jc8-BNw" field="MEMO_JAVA" name="CODE" value="BufferedReader br = new BufferedReader(new InputStreamReader((InputStream) exchange.getIn().getBody()));&#xA;System.out.println(&quot;FileName: &quot;+exchange.getIn().getHeader(&quot;CamelAwsS3Key&quot;)+&quot; Content: &quot; + br.readLine());&#xA;br.close();&#xA;"/>
+    <elementParameter xmi:id="_yh7koqJ-EeaaP-8jc8-BNw" field="TEXT" name="LABEL" value="Monitor"/>
+    <elementParameter xmi:id="_yh7ko6J-EeaaP-8jc8-BNw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_yh7kpKJ-EeaaP-8jc8-BNw" componentName="cFile" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="160">
+    <elementParameter xmi:id="_yh7kpaJ-EeaaP-8jc8-BNw" field="TEXT" name="UNIQUE_NAME" value="cFile_1" show="false"/>
+    <elementParameter xmi:id="_yh7kpqJ-EeaaP-8jc8-BNw" field="DIRECTORY" name="URI" value="context.s3_filepath"/>
+    <elementParameter xmi:id="_yh7kp6J-EeaaP-8jc8-BNw" field="CHECK" name="NOOP" value="true"/>
+    <elementParameter xmi:id="_yh7kqKJ-EeaaP-8jc8-BNw" field="CHECK" name="FLATTEN" value="false"/>
+    <elementParameter xmi:id="_yh7kqaJ-EeaaP-8jc8-BNw" field="CHECK" name="AUTOCREATE" value="true"/>
+    <elementParameter xmi:id="_yh7kqqJ-EeaaP-8jc8-BNw" field="TEXT" name="BUFFER_SIZE" value="&quot;128&quot;"/>
+    <elementParameter xmi:id="_yh7kq6J-EeaaP-8jc8-BNw" field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter xmi:id="_yh7krKJ-EeaaP-8jc8-BNw" field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter xmi:id="_yh7kraJ-EeaaP-8jc8-BNw" field="TEXT" name="FILENAME" value="context.s3_filename"/>
+    <elementParameter xmi:id="_yh7krqJ-EeaaP-8jc8-BNw" field="TABLE" name="ADVARGUMENTS"/>
+    <elementParameter xmi:id="_yh7kr6J-EeaaP-8jc8-BNw" field="TEXT" name="LABEL" value="Message_source"/>
+    <elementParameter xmi:id="_yh7ksKJ-EeaaP-8jc8-BNw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_yh7ksaJ-EeaaP-8jc8-BNw" componentName="cAWSS3" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="160">
+    <elementParameter xmi:id="_yh7ksqJ-EeaaP-8jc8-BNw" field="TEXT" name="UNIQUE_NAME" value="cAWSS3_2" show="false"/>
+    <elementParameter xmi:id="_yh7ks6J-EeaaP-8jc8-BNw" field="ROUTE_COMPONENT_TYPE" name="AWS_CONNECTION_CLIENT" value="cAWSConnection_1"/>
+    <elementParameter xmi:id="_yh7ktKJ-EeaaP-8jc8-BNw" field="TEXT" name="BUCKET_NAME" value="context.s3_bucket_name"/>
+    <elementParameter xmi:id="_yh7ktaJ-EeaaP-8jc8-BNw" field="TEXT" name="FILE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_yh7ktqJ-EeaaP-8jc8-BNw" field="TEXT" name="MAX_MESSAGES_PER_POLL" value="&quot;10&quot;" show="false"/>
+    <elementParameter xmi:id="_yh7kt6J-EeaaP-8jc8-BNw" field="OPENED_LIST" name="STORAGE_CLASS" value="STANDARD"/>
+    <elementParameter xmi:id="_yh7kuKJ-EeaaP-8jc8-BNw" field="TEXT" name="PREFIX" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_yh7kuaJ-EeaaP-8jc8-BNw" field="CHECK" name="DELETE_AFTER_READ" value="true" show="false"/>
+    <elementParameter xmi:id="_yh7kuqJ-EeaaP-8jc8-BNw" field="CHECK" name="DELETE_AFTER_WRITE" value="false"/>
+    <elementParameter xmi:id="_yh7ku6J-EeaaP-8jc8-BNw" field="CHECK" name="MULTI_PART_UPLOAD" value="false"/>
+    <elementParameter xmi:id="_yh7kvKJ-EeaaP-8jc8-BNw" field="TEXT" name="PART_SIZE" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_yh7kvaJ-EeaaP-8jc8-BNw" field="CHECK" name="SERVER_SIDE_ENCRYPTION" value="false"/>
+    <elementParameter xmi:id="_yh7kvqJ-EeaaP-8jc8-BNw" field="CHECK" name="INCLUDE_BODY" value="true" show="false"/>
+    <elementParameter xmi:id="_yh7kv6J-EeaaP-8jc8-BNw" field="TABLE" name="MESSAGE_HEADERS">
+      <elementValue xmi:id="_yh7kwKJ-EeaaP-8jc8-BNw" elementRef="MESSAGE_HEADER" value="CamelAwsS3Key"/>
+      <elementValue xmi:id="_yh7kwaJ-EeaaP-8jc8-BNw" elementRef="MESSAGE_HEADER_VALUE" value="context.s3_filename"/>
+    </elementParameter>
+    <elementParameter xmi:id="_yh7kwqJ-EeaaP-8jc8-BNw" field="CHECK" name="USE_MESSAGE_HEADERS_USER_DEFINED" value="false"/>
+    <elementParameter xmi:id="_yh7kw6J-EeaaP-8jc8-BNw" field="TABLE" name="MESSAGE_HEADERS_USER_DEFINED" show="false">
+      <elementValue xmi:id="_yh7kxKJ-EeaaP-8jc8-BNw" elementRef="MESSAGE_HEADER_USER_DEFINED" value="&quot;x-amz-meta-newLine&quot;"/>
+      <elementValue xmi:id="_yh7kxaJ-EeaaP-8jc8-BNw" elementRef="MESSAGE_HEADER_VALUE_USER_DEFINED" value="&quot;1&quot;"/>
+    </elementParameter>
+    <elementParameter xmi:id="_yh7kxqJ-EeaaP-8jc8-BNw" field="CHECK" name="ENABLE_POLICY" value="true"/>
+    <elementParameter xmi:id="_yh7kx6J-EeaaP-8jc8-BNw" field="MEMO" name="POLICY" value="{&#xD;&#xA;  &quot;Id&quot;: &quot;Policy1477646966616&quot;,&#xD;&#xA;  &quot;Version&quot;: &quot;2012-10-17&quot;,&#xD;&#xA;  &quot;Statement&quot;: [&#xD;&#xA;    {&#xD;&#xA;      &quot;Sid&quot;: &quot;Stmt1477646310742&quot;,&#xD;&#xA;      &quot;Action&quot;: [&#xD;&#xA;        &quot;s3:PutObject&quot;&#xD;&#xA;      ],&#xD;&#xA;      &quot;Effect&quot;: &quot;Allow&quot;,&#xD;&#xA;      &quot;Resource&quot;: &quot;arn:aws:s3:::yyan-bunket-test&quot;,&#xD;&#xA;      &quot;Principal&quot;: {&#xD;&#xA;        &quot;AWS&quot;: [&#xD;&#xA;          &quot;arn:aws:iam::054713022081:user/yyan&quot;&#xD;&#xA;        ]&#xD;&#xA;      }&#xD;&#xA;    }&#xD;&#xA;  ]&#xD;&#xA;}"/>
+    <elementParameter xmi:id="_yh7kyKJ-EeaaP-8jc8-BNw" field="TABLE" name="URI_OPTIONS"/>
+    <elementParameter xmi:id="_yh7kyaJ-EeaaP-8jc8-BNw" field="TEXT" name="LABEL" value="Producer"/>
+    <elementParameter xmi:id="_yh7kyqJ-EeaaP-8jc8-BNw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_yh7ky6J-EeaaP-8jc8-BNw" componentName="cAWSConnection" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="64" posY="160">
+    <elementParameter xmi:id="_yh7kzKJ-EeaaP-8jc8-BNw" field="TEXT" name="UNIQUE_NAME" value="cAWSConnection_1" show="false"/>
+    <elementParameter xmi:id="_yh7kzaJ-EeaaP-8jc8-BNw" field="TEXT" name="ACCESS_KEY" value="context.Accesskey"/>
+    <elementParameter xmi:id="_yh7kzqJ-EeaaP-8jc8-BNw" field="PASSWORD" name="SECRET_KEY" value="8pW6Nmy2kuc9H1hcfCEWaTYG+qwOhYfI"/>
+    <elementParameter xmi:id="_yh7kz6J-EeaaP-8jc8-BNw" field="OPENED_LIST" name="REGION" value="DEFAULT"/>
+    <elementParameter xmi:id="_yh7k0KJ-EeaaP-8jc8-BNw" field="CHECK" name="CONFIG_CLIENT" value="false"/>
+    <elementParameter xmi:id="_yh7k0aJ-EeaaP-8jc8-BNw" field="TABLE" name="CLIENT_CONFIGURATION" show="false">
+      <elementValue xmi:id="_yh7k0qJ-EeaaP-8jc8-BNw" elementRef="CLIENT_PARAMETER" value="ConnectionTimeout"/>
+      <elementValue xmi:id="_yh7k06J-EeaaP-8jc8-BNw" elementRef="VALUE" value=""/>
+    </elementParameter>
+    <elementParameter xmi:id="_yh7k1KJ-EeaaP-8jc8-BNw" field="TEXT" name="LABEL" value="aws connection"/>
+    <elementParameter xmi:id="_yh7k1aJ-EeaaP-8jc8-BNw" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <connection xmi:id="_yh7k1qJ-EeaaP-8jc8-BNw" connectorName="ROUTE" label="route1" lineStyle="14" metaname="cAWSS3_1" offsetLabelX="0" offsetLabelY="0" source="cAWSS3_1" target="cProcessor_1">
+    <elementParameter xmi:id="_yh7k16J-EeaaP-8jc8-BNw" field="TEXT" name="UNIQUE_NAME" value="route1" show="false"/>
+  </connection>
+  <connection xmi:id="_yh7k2KJ-EeaaP-8jc8-BNw" connectorName="ROUTE" label="route2" lineStyle="14" metaname="cFile_1" offsetLabelX="0" offsetLabelY="0" source="cFile_1" target="cAWSS3_2">
+    <elementParameter xmi:id="_yh7k2aJ-EeaaP-8jc8-BNw" field="TEXT" name="UNIQUE_NAME" value="route2" show="false"/>
+  </connection>
+  <note xmi:id="_yh7k2qJ-EeaaP-8jc8-BNw" opaque="true" posX="64" posY="32" sizeHeight="65" sizeWidth="417" text="Send local file to AWS S3, and consume to file.&#xD;&#xA;"/>
+  <subjob xmi:id="_yh7k26J-EeaaP-8jc8-BNw">
+    <elementParameter xmi:id="_yh7k3KJ-EeaaP-8jc8-BNw" field="TEXT" name="UNIQUE_NAME" value="cAWSS3_1" show="false"/>
+    <elementParameter xmi:id="_yh7k3aJ-EeaaP-8jc8-BNw" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_yh7k3qJ-EeaaP-8jc8-BNw" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_yh7k36J-EeaaP-8jc8-BNw">
+    <elementParameter xmi:id="_yh7k4KJ-EeaaP-8jc8-BNw" field="TEXT" name="UNIQUE_NAME" value="cProcessor_1" show="false"/>
+    <elementParameter xmi:id="_yh7k4aJ-EeaaP-8jc8-BNw" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_yh7k4qJ-EeaaP-8jc8-BNw" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_yh7k46J-EeaaP-8jc8-BNw">
+    <elementParameter xmi:id="_yh7k5KJ-EeaaP-8jc8-BNw" field="TEXT" name="UNIQUE_NAME" value="cFile_1" show="false"/>
+    <elementParameter xmi:id="_yh7k5aJ-EeaaP-8jc8-BNw" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_yh7k5qJ-EeaaP-8jc8-BNw" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_yh7k56J-EeaaP-8jc8-BNw">
+    <elementParameter xmi:id="_yh7k6KJ-EeaaP-8jc8-BNw" field="TEXT" name="UNIQUE_NAME" value="cAWSS3_2" show="false"/>
+    <elementParameter xmi:id="_yh7k6aJ-EeaaP-8jc8-BNw" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_yh7k6qJ-EeaaP-8jc8-BNw" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_yh7k66J-EeaaP-8jc8-BNw">
+    <elementParameter xmi:id="_yh7k7KJ-EeaaP-8jc8-BNw" field="TEXT" name="UNIQUE_NAME" value="cAWSConnection_1" show="false"/>
+    <elementParameter xmi:id="_yh7k7aJ-EeaaP-8jc8-BNw" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_yh7k7qJ-EeaaP-8jc8-BNw" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>
